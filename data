@@ -1,0 +1,53 @@
+use students;
+
+db.students.insertMany(
+    [
+        {"name": "Bob", "class": 7, "lessons": ["english", "mathematics"], "avgScore": 3.5},
+        {"name": "Alice", "class": 7, "lessons": ["english", "mathematics", 'geology'], "avgScore": 5},
+        {"name": "Viktor", "class": 7, "lessons": ["german", "informatics"], "avgScore": 4.1},
+        {"name": "Dima", "class": 7, "lessons": ["german", "mathematics", "physics"], "avgScore": 3.5},
+        {"name": "Katerina", "class": 1, "lessons": ["basic"], "avgScore": 4},
+        {"name": "Ivanka", "class": 1, "lessons": ["basic"], "avgScore": 4.91},
+        {"name": "Oleguk", "class": 1, "lessons": ["basic"], "avgScore": 4.2},
+        {"name": "Igorko", "class": 1, "lessons": ["basic"], "avgScore": 2.61},
+        {"name": "Katya", "class": 1, "lessons": ["basic"], "avgScore": 3.92},
+        {"name": "Viktor", "class": 1, "lessons": ["basic"], "avgScore": 3.54},
+        {"name": "Ivan", "class": 2, "lessons": ["basic"], "avgScore": 4.2},
+        {"name": "Artem", "class": 2, "lessons": ["basic"], "avgScore": 3.9},
+        {"name": "Kostya", "class": 2, "lessons": ["basic"], "avgScore": 4.24},
+        {"name": "Inna", "class": 2, "lessons": ["basic"], "avgScore": 3.11},
+        {"name": "Ivan", "class": 3, "lessons": ["basic"], "avgScore": 4.9},
+        {"name": "Galina", "class": 3, "lessons": ["basic"], "avgScore": 3.8},
+        {"name": "Dima", "class": 3, "lessons": ["basic"], "avgScore": 4.5},
+        {"name": "Fedir", "class": 4, "lessons": ["informatics", "physics"], "avgScore": 3.1},
+        {"name": "Murka", "class": 4, "lessons": ["physics"], "avgScore": 2.7},
+        {"name": "Vasyl", "class": 4, "lessons": ["english"], "avgScore": 4.93},
+        {"name": "Feliks", "class": 4, "lessons": ["physics"], "avgScore": 2.12},
+        {"name": "Katerina", "class": 4, "lessons": ["geology"], "avgScore": 4.51},
+        {"name": "Konstantin", "class": 4, "lessons": ["english", "informatics", "geology"], "avgScore": 2.31},
+        {"name": "Inna", "class": 4, "lessons": ["basic"], "avgScore": 3.1},
+        {"name": "Inna", "class": 4, "lessons": ["basic"], "avgScore": 3.1},
+        {"name": "Inna", "class": 4, "lessons": ["basic"], "avgScore": 3.1},
+        {"name": "Inna", "class": 5, "lessons": ["basic"], "avgScore": 3.1},
+        {"name": "Inna", "class": 6, "lessons": ["basic"], "avgScore": 3.1},
+        {"name": "Inna", "class": 8, "lessons": ["basic"], "avgScore": 3.1},
+        {"name": "Inna", "class": 9, "lessons": ["basic"], "avgScore": 3.1}
+    ]
+);
+
+
+use teacher;
+
+db.teacher.insertMany(
+    [
+        {"name": "Mariya Ivanivna", "class_curator": 7, "lesson": "english", "payment": 2000},
+        {"name": "Sergey Viktorovich", "class_curator": 9, "lesson": "informatics", "payment": 3200},
+        {"name": "Ivan Borisovich", "class_curator": 6, "lesson": "mathematics", "payment": 2500},
+        {"name": "Tetyna Visilivna", "class_curator": 5, "lesson": "french", "payment": 2000},
+        {"name": "Oksana Olegivna", "class_curator": 8, "lesson": "physics", "payment": 4000},
+        {"name": "Ostap Miroslavovich", "class_curator": 4, "lesson": "geology", "payment": 2500},
+        {"name": "Dmitro Igorovich", "class_curator": 3, "lesson": "basic", "payment": 2200},
+        {"name": "Mikhailo Denisovick", "class_curator": 2, "lesson": "basic", "payment": 2300},
+        {"name": "Diana Viktorivna", "class_curator": 1, "lesson": "basic", "payment": 2100}
+    ]
+);
