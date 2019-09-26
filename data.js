@@ -1,4 +1,5 @@
-use students;
+use
+students;
 
 db.students.insertMany(
     [
@@ -18,12 +19,21 @@ db.students.insertMany(
         {"name": "Dima", "class": 7, "lessons": ["german", "mathematics", "physics"], "avgScore": 3.5},
         {
             "name": "Katerina", "class": 1, "lessons": ["basic"], "avgScore": 4, "parents": [
-                {"gender": "male", "name": "Ivan", "profession": "blogger"},
-                {"gender": "male", "name": "Andriy", "profession": "blogger"}
+                {"gender": "male", "name": "Igor", "profession": "scientist"}
             ]
         },
-        {"name": "Ivanka", "class": 1, "lessons": ["basic"], "avgScore": 4.91},
-        {"name": "Oleguk", "class": 1, "lessons": ["basic"], "avgScore": 4.2},
+        {
+            "name": "Ivanka", "class": 1, "lessons": ["basic"], "avgScore": 4.91, "parents": [
+                {"gender": "female", "name": "Nadya", "profession": "teacher"},
+                {"gender": "male", "name": "Oleg", "profession": "sailor"}
+            ]
+        },
+        {
+            "name": "Oleguk", "class": 1, "lessons": ["basic"], "avgScore": 4.2, "parents": [
+                {"gender": "female", "name": "Katya", "profession": "journalist"},
+                {"gender": "male", "name": "Miroslav", "profession": "photographer"}
+            ]
+        },
         {
             "name": "Igorko", "class": 1, "lessons": ["basic"], "avgScore": 2.61, "parents": [
                 {"gender": "male", "name": "Vitalik", "profession": "builder"},
@@ -37,20 +47,19 @@ db.students.insertMany(
         },
         {
             "name": "Viktor", "class": 1, "lessons": ["basic"], "avgScore": 3.54, "parents": [
-                {"gender": "male", "name": "Ivan", "profession": "blogger"},
-                {"gender": "male", "name": "Andriy", "profession": "blogger"}
+                {"gender": "male", "name": "Oleksandr", "profession": "soldier"},
+                {"gender": "female", "name": "Svitlana", "profession": "soldier"}
             ]
         },
         {
             "name": "Ivan", "class": 2, "lessons": ["basic"], "avgScore": 4.2, "parents": [
-                {"gender": "male", "name": "Ivan", "profession": "blogger"},
-                {"gender": "male", "name": "Andriy", "profession": "blogger"}
+                {"gender": "male", "name": "Ivan", "profession": "trainer"},
+                {"gender": "female", "name": "Vika"}
             ]
         },
         {
-            "name": "Artem", "class": 2, "lessons": ["basic"], "avgScore": 3.9, "parents": [
-                {"gender": "male", "name": "Ivan", "profession": "blogger"},
-                {"gender": "male", "name": "Andriy", "profession": "blogger"}
+            "name": "Artem", "class": 2, "lessons": ["how to be a star"], "avgScore": 3.9, "parents": [
+                {"gender": "female", "name": "Albert", "profession": "star"},
             ]
         },
         {
@@ -61,26 +70,26 @@ db.students.insertMany(
         },
         {
             "name": "Inna", "class": 2, "lessons": ["basic"], "avgScore": 3.11, "parents": [
-                {"gender": "male", "name": "Ivan", "profession": "blogger"},
-                {"gender": "male", "name": "Andriy", "profession": "blogger"}
+                {"gender": "male", "name": "Adam", "profession": "musician"},
+                {"gender": "female", "name": "Diana"}
             ]
         },
         {
             "name": "Ivan", "class": 3, "lessons": ["basic"], "avgScore": 4.9, "parents": [
-                {"gender": "male", "name": "Ivan", "profession": "blogger"},
-                {"gender": "male", "name": "Andriy", "profession": "blogger"}
+                {"gender": "male", "name": "Vlad", "profession": "merchandiser"},
+                {"gender": "female", "name": "Galina", "profession": "teacher"}
             ]
         },
         {
             "name": "Galina", "class": 3, "lessons": ["basic"], "avgScore": 3.8, "parents": [
-                {"gender": "male", "name": "Ivan", "profession": "blogger"},
-                {"gender": "male", "name": "Andriy", "profession": "blogger"}
+                {"gender": "male", "name": "Johny", "profession": "doctor"},
+                {"gender": "female", "name": "Sasha", "profession": "porn star"}
             ]
         },
         {
             "name": "Dima", "class": 3, "lessons": ["basic"], "avgScore": 3.5, "parents": [
-                {"gender": "male", "name": "Ivan", "profession": "blogger"},
-                {"gender": "male", "name": "Andriy", "profession": "blogger"}
+                {"gender": "male", "name": "Dima", "profession": "trainer"},
+                {"gender": "female", "name": "Olga", "profession": "sportsman"}
             ]
         },
         {
@@ -91,8 +100,7 @@ db.students.insertMany(
         },
         {
             "name": "Murka", "class": 4, "lessons": ["physics"], "avgScore": 2.7, "parents": [
-                {"gender": "male", "name": "Ivan", "profession": "blogger"},
-                {"gender": "male", "name": "Andriy", "profession": "blogger"}
+                {"gender": "female", "name": "Inessa", "profession": "writer"}
             ]
         },
         {
@@ -104,12 +112,12 @@ db.students.insertMany(
         {
             "name": "Feliks", "class": 4, "lessons": ["physics"], "avgScore": 2.12, "parents": [
                 {"gender": "female", "name": "Tanya", "profession": "designer"},
-                {"gender": "male", "name": "Andriy", "profession": "blogger"}
+                {"gender": "male", "name": "Andriy", "profession": "writer"}
             ]
         },
         {
             "name": "Katerina", "class": 4, "lessons": ["geology"], "avgScore": 4.51, "parents": [
-                {"gender": "female", "name": "Ivan", "profession": "architect"},
+                {"gender": "female", "name": "Ivanka", "profession": "architect"},
             ]
         },
         {
@@ -136,8 +144,8 @@ db.students.insertMany(
         },
         {
             "name": "Petro", "class": 4, "lessons": ["basic"], "avgScore": 4.8, "parents": [
-                {"gender": "male", "name": "Ivan", "profession": "blogger"},
-                {"gender": "male", "name": "Andriy", "profession": "blogger"}
+                {"gender": "male", "name": "Dima", "profession": "builder"},
+                {"gender": "female", "name": "Inna", "profession": "seamstress"}
             ]
         }
     ]
