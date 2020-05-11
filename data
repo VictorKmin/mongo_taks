@@ -1,5 +1,3 @@
-use students;
-
 db.students.insertMany(
     [
         {
